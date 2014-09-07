@@ -54,16 +54,16 @@ this is body
 ```
 
 ### EDN
- * EDN front matter is separated by `~~~`.
+ * EDN front matter is separated by `###`.
 ```
-~~~
+###
 :hello "world"
 :nums [
     "one"
     "two"
     "three"
 ]
-~~~
+###
 
 this is body
 ```

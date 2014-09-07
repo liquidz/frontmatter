@@ -28,7 +28,7 @@
   (case first-line
     "---" parse-yaml
     ";;;" parse-json
-    "~~~" parse-edn
+    "###" parse-edn
     nil))
 
 (defn parse
