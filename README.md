@@ -12,7 +12,9 @@ Supported front matter formats are follwoing:
 
 ## Installation
 
- * FIXME
+Add following dependency to your `profject.clj`.
+
+[![Clojars Project](http://clojars.org/frontmatter/latest-version.svg)](http://clojars.org/frontmatter)
 
 ## Usage
 
