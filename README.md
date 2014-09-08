@@ -1,5 +1,6 @@
 # frontmatter
 
+[![Build Status](https://travis-ci.org/liquidz/frontmatter.svg?branch=master)](https://travis-ci.org/liquidz/frontmatter)
 [![Dependency Status](https://www.versioneye.com/user/projects/540c4b64ccc023ede900024e/badge.svg?style=flat)](https://www.versioneye.com/user/projects/540c4b64ccc023ede900024e)
 
 A Clojure library designed to parse front matter from a file.
