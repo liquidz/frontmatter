@@ -1,4 +1,4 @@
-(defproject frontmatter "0.0.1"
+(defproject frontmatter "0.0.3"
   :description "A Clojure library designed to parse front matter from a file"
   :url "https://github.com/liquidz/frontmatter"
   :license {:name "Eclipse Public License"

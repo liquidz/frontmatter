@@ -15,10 +15,10 @@
 
 (facts "parse should work fine."
   (fact "YAML"
-    (parse (test-path "yaml.txt")) => expected-data)
+    (parse-file (test-path "yaml.txt")) => expected-data)
   (fact "JSON"
-    (parse (test-path "json.txt")) => expected-data)
+    (parse-file (test-path "json.txt")) => expected-data)
   (fact "EDN"
-    (parse (test-path "edn.txt")) => expected-data)
+    (parse-file (test-path "edn.txt")) => expected-data)
   (fact "No front matter"
-    (parse (test-path "dummy.txt")) => {:frontmatter {} :body "this is body"}))
+    (parse-file (test-path "dummy.txt")) => {:frontmatter {} :body "this is body"}))
