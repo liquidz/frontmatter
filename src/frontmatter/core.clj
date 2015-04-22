@@ -32,11 +32,18 @@
     nil))
 
 (defn parse
-  [path]
-  (let [original-body             (-> path slurp str/trim)
-        [first-line & rest-lines] (str/split-lines original-body)
+  [original-body]
+  (let [[first-line & rest-lines] (str/split-lines original-body)
         [frontmatter body]        (split-lines rest-lines first-line)]
     (if-let [parser (select-parse-fn first-line)]
       {:body (str/join "\n" body)
        :frontmatter (parser (str/join "\n" frontmatter))}
       {:frontmatter {} :body original-body})))
+
+(defn parse-str [s]
+  (parse s))
+
+(defn parse-file [path]
+  (parse (-> path
+             slurp
+             str/trim)))
